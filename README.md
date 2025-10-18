@@ -1,5 +1,5 @@
 # OPERATION ET GESTION DE PRODUCTION SUR RESEAU HT IEEE-9 BUS
-Contexte (quelques lignes)
+
 Ce projet vise à réaliser des simulations de load flow et à optimiser le coût total de production d’un réseau électrique en jouant sur des paramètres de dispatch (puissances actives/réactives) et de tensions. Les études combinent des simulations de référence (cas de base, analyse de congestion) et des routines d’optimisation pour comparer méthodes numériques et approches exhaustives.
 
 Bureau d’Études (Lab 1)
