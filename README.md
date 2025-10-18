@@ -17,17 +17,7 @@ L'objectif principal de ce dépôt est de **partager les résultats** que j'ai o
 Le depot contiendra : ce Readme bien détaillé avec les résultats présentés. Il contiendra aussi le rapport détaillé du projet en pdf. 
 Certains scripts matlab pourront etre partager mais cependant les fichiers de codes complet matlab ne sont pas sur ce repositoire.
 
----
 
-## Remarque importante — attribution
-Les fichiers fournis par **[NOM_PROFESSEUR]** (ci-après « code d'origine ») **ne sont pas inclus** dans ce dépôt public.  
-Ce dépôt contient uniquement :
-- mon rapport : `report/report.pdf`
-- mes scripts et analyses (écrits par **[TON NOM]**) : `code/`
-- résultats et figures : `results/`  
-
-La licence indiquée dans `LICENSE` s'applique uniquement aux fichiers créés par **[TON NOM]**. Pour obtenir le code d'origine, contactez directement **[NOM_PROFESSEUR]**.  
-(Extrait et synthèse des objectifs et méthodes du rapport). :contentReference[oaicite:0]{index=0}
 
 ---
 
