@@ -4,7 +4,7 @@ Ce projet vise à réaliser des simulations de load flow et à optimiser le coû
 
 Bureau d’Études (Lab 1)
 
-Objectif principal : établir et valider le modèle de load flow du réseau (topologie, paramètres des lignes, charges et générateurs) et produire les cas de base.
+Objectif principal : établir et valider le modèle de load flow du réseau (topologie, paramètres des lignes, charges et générateurs) et produire les cas de base. 
 
 Travaux : calculs de tensions et flux de puissance, vérification des limites (courant/puissance/voltage), étude d’impact de scénarios de charge et identification des lignes critiques.
 
