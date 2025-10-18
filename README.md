@@ -1,4 +1,4 @@
-# OP-RATION-ET-GESTION-DE-PRODUCTION-SUR-RESEAU-HT-IEEE-9-BUS-
+# OPERATION ET GESTION DE PRODUCTION SUR RESEAU HT IEEE-9 BUS
 Projet de simulation du Load Flow d'un réseau IEEE 9 BUS modifié. Il présente également des méthodes d'optimisation du coût de production du réseau concerné.
 
 
