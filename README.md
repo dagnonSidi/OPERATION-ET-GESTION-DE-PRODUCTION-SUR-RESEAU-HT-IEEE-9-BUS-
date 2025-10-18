@@ -11,11 +11,11 @@ Objectif principal : optimiser le dispatch des unités de production pour minimi
 Travaux : formulation des fonctions objectifs (coût, pertes, critères de fiabilité), essais comparatifs (recherche exhaustive, méthode de gradient, optimiseur fmincon), et analyses de scénarios (congestion, contingences, délestage).
 
 
-# Projet — Optimisation de dispatch et résultats (Load Flow)
+# CONTENU DU REPOSITOIRE
 
-## Objectif
-L'objectif de ce dépôt est de **partager uniquement les résultats** que j'ai obtenus lors du projet (simulations et optimisations).  
-Ce projet porte sur l'optimisation du dispatch d'un réseau électrique en jouant sur les paramètres de tension, les puissances et les fonctions objectif. Seuls les **résultats, figures et scripts que j'ai écrits** seront publiés ici ; le code original fourni par l'enseignant **n'est pas inclus** (voir section Attribution).
+L'objectif principal de ce dépôt est de **partager les résultats** que j'ai obtenus lors du projet.
+Le depot contiendra : ce Readme bien détaillé avec les résultats présentés. Il contiendra aussi le rapport détaillé du projet en pdf. 
+Certains scripts matlab pourront etre partager mais cependant les fichiers de codes complet matlab ne sont pas sur ce repositoire.
 
 ---
 
