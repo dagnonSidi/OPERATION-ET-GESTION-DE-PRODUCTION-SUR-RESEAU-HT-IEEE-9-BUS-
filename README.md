@@ -21,9 +21,11 @@ Certains scripts matlab pourront etre partager mais cependant les fichiers de co
 
 ---
 
-## Description du réseau (schéma représentatif)
-Le réseau étudié est un **réseau de type étude pédagogique** avec :
-- 3 générateurs (bus 1, 2, 3) et charges réparties principalement sur les nœuds 5, 6 et 8 ; demande totale : **475 MW** et **175 MVAr**. :contentReference[oaicite:1]{index=1}  
+# Description du réseau (schéma représentatif)
+Le réseau étudié est un **réseau de type étude pédagogique IEEE modifié** avec :
+- 3 générateurs (bus 1, 2, 3) et charges réparties principalement sur les nœuds 5, 6 et 8 ; demande totale : **475 MW** et **175 MVAr**. :contentReference[oaicite:1]{index=1}
+- <img width="403" height="225" alt="image" src="https://github.com/user-attachments/assets/d08c0b16-4a7d-4438-8ee8-9f791f077c76" />
+
 - Caractéristiques principales des générateurs :
   - **G1 (bus 1)** : prix marginal 25 €/MWh — max **3 pu**. :contentReference[oaicite:2]{index=2}  
   - **G2 (bus 2)** : prix 75 €/MWh — max **3 pu**. :contentReference[oaicite:3]{index=3}  
