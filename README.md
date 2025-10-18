@@ -27,17 +27,11 @@ Le réseau étudié est un **réseau de type étude pédagogique IEEE modifié**
 - <img width="403" height="225" alt="image" src="https://github.com/user-attachments/assets/d08c0b16-4a7d-4438-8ee8-9f791f077c76" />
 
 - Caractéristiques principales des générateurs :
-  - **G1 (bus 1)** : prix marginal 25 €/MWh — max **300 MVA**.  
-  - **G2 (bus 2)** : prix 75 €/MWh — max **300 MVA**.  
-  - **G3 (bus 3)** : prix 50 €/MWh — max **200 MVA**.  
+  - **G1 (bus 1)** : prix marginal 25 €/MWh — Production max **300 MVA**.  
+  - **G2 (bus 2)** : prix 75 €/MWh — Production max **300 MVA**.  
+  - **G3 (bus 3)** : prix 50 €/MWh — Production max **200 MVA**.  
 - Limites réglementaires de tension : **±10%** (EN-EC 50-160). :contentReference[oaicite:5]{index=5}  
-- Puissances apparentes admissibles (Sn_max) : par défaut 9.9 pu sur les lignes ; certains scénarios testent des réductions (ex. L4=0.5, L5=0.9, L7=0.5 pu). :contentReference[oaicite:6]{index=6}
 
-> Schéma représentatif (illustration) — voir image ci-dessous.
-
-![Schéma réseau (illustration)](sandbox:/mnt/data/network_schematic.png)
-
-*(Schéma illustratif créé pour le README — se référer au rapport pour la topologie exacte).* :contentReference[oaicite:7]{index=7}
 
 ---
 
