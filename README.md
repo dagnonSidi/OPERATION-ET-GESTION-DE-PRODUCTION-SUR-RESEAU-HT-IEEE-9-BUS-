@@ -2,11 +2,11 @@
 
 Ce projet vise à réaliser des simulations de load flow et à optimiser le coût total de production d’un réseau électrique en jouant sur des paramètres de dispatch (puissances actives/réactives) et de tensions. Les études combinent des simulations de référence (cas de base, analyse de congestion) et des routines d’optimisation pour comparer méthodes numériques et approches exhaustives. Il contient deux BE (bureau d'étude) 
 
-Bureau d’Études (Lab 1):
+**Bureau d’Études (Lab 1)**:
 Objectif principal : établir et valider le modèle de load flow du réseau (topologie, paramètres des lignes, charges et générateurs) et produire les cas de base. 
 Travaux : calculs de tensions et flux de puissance, vérification des limites (courant/puissance/voltage), étude d’impact de scénarios de charge et identification des lignes critiques.
 
-Bureau d’Études (Lab 2):
+**Bureau d’Études (Lab 2)**:
 Objectif principal : optimiser le dispatch des unités de production pour minimiser le coût total de production sous contraintes (puissance apparente des lignes, limites de génération et enveloppe de tension).
 Travaux : formulation des fonctions objectifs (coût, pertes, critères de fiabilité), essais comparatifs (recherche exhaustive, méthode de gradient, optimiseur fmincon), et analyses de scénarios (congestion, contingences, délestage).
 
