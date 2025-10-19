@@ -2,11 +2,11 @@
 
 Ce projet vise à réaliser des simulations de load flow et à optimiser le coût total de production d’un réseau électrique en jouant sur des paramètres de dispatch (puissances actives/réactives) et de tensions. Les études combinent des simulations de référence (cas de base, analyse de congestion) et des routines d’optimisation pour comparer méthodes numériques et approches exhaustives. Il contient deux BE (bureau d'étude) 
 
-**Bureau d’Études (Lab 1)**:
+**Bureau d’Études 1 (Lab 2)**:
 Objectif principal : établir et valider le modèle de load flow du réseau (topologie, paramètres des lignes, charges et générateurs) et produire les cas de base. 
 Travaux : calculs de tensions et flux de puissance, vérification des limites (courant/puissance/voltage), étude d’impact de scénarios de charge et identification des lignes critiques.
 
-**Bureau d’Études (Lab 2)**:
+**Bureau d’Études 2 (Lab 3)**:
 Objectif principal : optimiser le dispatch des unités de production pour minimiser le coût total de production sous contraintes (puissance apparente des lignes, limites de génération et enveloppe de tension).
 Travaux : formulation des fonctions objectifs (coût, pertes, critères de fiabilité), essais comparatifs (recherche exhaustive, méthode de gradient, optimiseur fmincon), et analyses de scénarios (congestion, contingences, délestage).
 
@@ -33,14 +33,7 @@ Le réseau étudié est un **réseau de type étude pédagogique IEEE modifié**
 - Limites réglementaires de tension : **±10%** (EN-EC 50-160). :contentReference[oaicite:5]{index=5}  
 
 
----
-
-## Contenu du dépôt
-- `report/report.pdf` — ton rapport complet (fournit les scénarios, méthodes et figures originales). :contentReference[oaicite:8]{index=8}  
-- `code/` — scripts **que j'ai écrits** (wrappers, post-traitement, génération des figures).  
-- `results/` — figures, captures et fichiers `.mat` / `.csv` contenant les sorties des simulations et des optimisations (extraits ci-dessous).  
-- `NOTICE` — clause d’attribution (exclusion du code d’origine).  
-- `LICENSE` — licence s’appliquant uniquement aux fichiers créés par moi.
+# **Bureau d’Études 1 (Lab 2)**:
 
 ---
 
