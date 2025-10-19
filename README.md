@@ -65,31 +65,27 @@ On a fait plusieurs paramétrage, et les pertes correspondant à chacun est dans
 
 
 
-  ###  PART III —maximisation du coefficient de lestage (gestion du délestage, étude de contingence). 
+  ###  PART III —maximisation du coefficient de lestage (gestion du délestage, étude de contingence).
+Dans cette partie on supposé que la ** ligne L6** est hors service. Par conséquent deux lignes restantes pour alimenter la charge 6 ne suffisent plus. **L2 = 0.4 pu** et **L5 = 2 pu* sont congstiées.
+
+L'objectif dans ce contexte est maintenir le plus possible de client (lestage) sous peine de recevoir des pénalités pour chaque client non alimenté: maximiser le coefficient de lestage, tout en respectant les limites de puissance apparente sur certaines lignes.
+
+
+**Résultat**: En jouant sur les valeurs de tensions et de puissant on pu maintenir 85% des clients. Les résulats sont présenté sur l'image ci-dessus.
+
+<img width="1086" height="461" alt="image" src="https://github.com/user-attachments/assets/ee208b06-202e-420b-b007-d97bcc0f8d7b" />
+
+
+**Remarque**: plus de détails sur la méthode et aussi sur les pénalités à payer pouvant aller jusqu'à 800 000 euros sont présentés dans le rapport
+
+
+  
 # **Bureau d’Études 2 (Lab 3)**:   
 - **Lab n°3** — comparaison des méthodes d'optimisation : recherche exhaustive vs `fmincon` (optimisation automatique). :contentReference[oaicite:12]{index=12}
 
 Ces parties sont reprises dans le dossier `results/` avec un résumé des principaux résultats et les figures correspondantes.
 
----
 
-## Résultats clés — résumé par partie (extraits & figures)
-
-
-
----
-
-### Lab n°2 — PART II : Minimisation des pertes
-- Méthodes testées : tâtonnement (balayage), méthode des gradients.  
-- Résultats : réduction importante des pertes par réglage des tensions et dispatch — exemple final obtenu **P_losses ≈ 0.0891 pu** pour un plan PG1 = 2.55 pu, PG3 = 1.3 pu (après ajustements de tensions).   
-- Figure associée : matrice des pertes en fonction de P2/P3 et carte 3D (voir `results/`).
-
----
-
-### Lab n°2 — PART III : Maximisation du coefficient de lestage (gestion du délestage)
-- Contexte : mise hors service de la ligne L6 (contingence).  
-- Objectif : maximiser le % de clients alimentés (coefficient de lestage).  
-- Résultat : on atteint jusqu'à **0.85–0.91** du coefficient de lestage selon les scénarios, en acceptant un léger surcoût mais en réduisant fortement les pénalités liées aux coupures. Exemple numérique : réduction des pénalités de ~875 000 € → 375 000 € en passant de 0.65 → 0.85. 
 
 ---
 
