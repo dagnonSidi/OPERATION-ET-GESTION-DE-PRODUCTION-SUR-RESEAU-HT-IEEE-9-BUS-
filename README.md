@@ -96,29 +96,40 @@ Une fois cette matrice de pertes obtenu, on utilise la fonction Surf de Matlab p
 
 <img width="1073" height="529" alt="image" src="https://github.com/user-attachments/assets/cde0934c-7a43-4e2b-8243-df11b7a138d2" />
 
+
 La perte de puissante active étant une fonction convexe, les minimums de pertes se trouvent dans le creux de la fonction.    
-
-
 Sans contrainte de tension ou de puissance on eu la valeur minimale de **p_losses=0.0888 pu** correspondant à **P2=0.9pu** ,**P3=1.30pu**
 
-  }
+**Remarque**: plus de détails sur la méthode et aussi la simulation d'autres scénarios (avec des contraintes en tension et en puissances) sont présentés dans le rapport pdf.  
 
----
 
-## Fichiers que j'ai ajoutés pour le dépôt (prêt à push)
-- `network_schematic.png` — schéma illustratif (à placer dans `docs/` ou `assets/`).  
-- `results_comparison.png` — figure comparative des pertes par méthode.  
-- `key_results_summary.csv` — résumé numérique des valeurs clefs.  
-(Téléchargement ci-dessous.)
+###   - PART I  — **Recherche exhaustive pour minimiser les pertes**
 
----
+Dans cette partie, on utilise une methode automatique, la fonction **`fmincon`** de Matlab. Cette fonction permet de faire une optimisation avec contrainte sur une fonction convexe. 
+Pour cela, on definit la fonction qu'on souhaite optimiser : soit la perte ou soit le cout totale. On va donc l'utiliser pour optimiser d'abord les pertes et comparer à la méthode précédente.
+Ensuite on l'utilisera aussi pour optimiser le cout total.
 
-## Commandes rapides pour ajouter ces fichiers et committer
-```bash
-# depuis le dossier du projet local
-mkdir -p results assets report code
-# placer report/report.pdf (ton PDF) dans report/
-# ajouter les images téléchargées dans assets/ ou results/
-git add README.md NOTICE LICENSE report/ assets/ results/ code/
-git commit -m "Ajout README, NOTICE, résultats et images illustratives"
-git push origin main
+ ####   **Fmincon pour optimiser les pertes actives**
+ le Fmincon permet d'obtenir les bonnes valeur d'un vecteur composé de 5 paramètres [V1 V2 V3 P2 P3] afin de minimiser les pertes. Après simulation on a obtenu sans contrainte
+ une valeur de P_losses=0.0887 pu.
+
+
+ <img width="308" height="333" alt="image" src="https://github.com/user-attachments/assets/1575ff3b-77c7-4955-984c-f40cba20bcde" />
+
+
+ ####   **Fmincon pour optimiser le cout**
+ le Fmincon permet d'obtenir les bonnes valeur d'un vecteur composé de 5 paramètres [V1 V2 V3 P2 P3] afin de minimiser le cout total. Pour cela on a définit la fonction objective
+ cout par:
+ 
+
+<img width="1022" height="91" alt="image" src="https://github.com/user-attachments/assets/c0837e28-3c61-450b-a468-488a77d4c345" />
+
+
+ 
+Après simulation on a obtenu sans contrainte un cout minimal de 16740 euros:
+
+
+<img width="364" height="84" alt="image" src="https://github.com/user-attachments/assets/dc1bc2b9-f3f7-40f2-9393-938c2ba1f877" />
+
+
+**Remarque**: plus de détails sur la méthode et aussi la simulation d'autres scénarios (avec des contraintes en tension et en puissances) sont présentés dans le rapport pdf.  
