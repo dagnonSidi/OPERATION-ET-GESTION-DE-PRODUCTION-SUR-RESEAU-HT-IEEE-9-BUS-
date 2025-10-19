@@ -34,15 +34,15 @@ Le réseau étudié est un **réseau de type étude pédagogique IEEE modifié**
 
 
 # **Bureau d’Études 1 (Lab 2)**:
+L'Objectif de ce Lab 2 est : étudier et optimiser la performance opérationnelle du réseau en ajustant tensions et dispatch (puissances actives/réactives) 
+pour minimiser le cout, les pertes tout en respectant les contraintes (Sn des lignes, limites de tension et de génération) et enfin maximiser le coefficient de lestage en cas de congestions de lignes.
+Il est divisé en 3 parties : 
 
----
-
-## Parties importantes identifiées dans le rapport (TOC synthétique)
-Le rapport contient les parties suivantes (identifiées et reprises ci-dessous) :  
-- **Lab n°2**  
   - PART I — minimisation des coûts (ordre de mérite, scénarios). :contentReference[oaicite:9]{index=9}  
   - PART II — minimisation des pertes (tâtonnement, gradient). :contentReference[oaicite:10]{index=10}  
-  - PART III — maximisation du coefficient de lestage (gestion du délestage, étude de contingence). :contentReference[oaicite:11]{index=11}  
+  - PART III — maximisation du coefficient de lestage (gestion du délestage, étude de contingence). :contentReference[oaicite:11]{index=11}
+
+# **Bureau d’Études 2 (Lab 3)**:   
 - **Lab n°3** — comparaison des méthodes d'optimisation : recherche exhaustive vs `fmincon` (optimisation automatique). :contentReference[oaicite:12]{index=12}
 
 Ces parties sont reprises dans le dossier `results/` avec un résumé des principaux résultats et les figures correspondantes.
