@@ -41,11 +41,14 @@ Il est divisé en 3 parties :
   - PART I — minimisation des coûts (ordre de mérite, scénarios).
   - PART II — minimisation des pertes (tâtonnement, gradient).
   - PART III — maximisation du coefficient de lestage (gestion du délestage, étude de contingence). 
-  ## PART I — minimisation des coûts (ordre de mérite, scénarios).
+  ### PART I — minimisation des coûts (ordre de mérite, scénarios).
+Dans cette partie on minimise le coût total de production en utilisant le merit order sur le réseau. En gros on produit avec les centrales les moins chers d'abord. En utilisant cette méthode l'ordre d'appel
+des centrales est : G1 (25€/MWh) --> G3 ( 50 €/MWh) --> G2 (75€/MWh). Cela permet d'avoir un cout totale de production de l'ordre 16800 €
+<img width="526" height="246" alt="image" src="https://github.com/user-attachments/assets/63991e83-8a31-4c80-bce6-3377df4c917d" />
 
-  ## PART II — minimisation des pertes (tâtonnement, gradient).
+  ### PART II — minimisation des pertes (tâtonnement, gradient).
 
-  ##  PART III —maximisation du coefficient de lestage (gestion du délestage, étude de contingence). 
+  ###  PART III —maximisation du coefficient de lestage (gestion du délestage, étude de contingence). 
 # **Bureau d’Études 2 (Lab 3)**:   
 - **Lab n°3** — comparaison des méthodes d'optimisation : recherche exhaustive vs `fmincon` (optimisation automatique). :contentReference[oaicite:12]{index=12}
 
