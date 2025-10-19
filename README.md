@@ -42,12 +42,30 @@ Il est divisé en 3 parties :
   - PART II — minimisation des pertes (tâtonnement, gradient).
   - PART III — maximisation du coefficient de lestage (gestion du délestage, étude de contingence). 
   ### PART I — minimisation des coûts (ordre de mérite, scénarios).
-Dans cette partie on minimise le coût total de production en utilisant le merit order sur le réseau. En gros on produit avec les centrales les moins chers d'abord. En utilisant cette méthode l'ordre d'appel
+Dans cette partie on minimise le coût total de production  est minimisé en utilisant le merit order sur le réseau. En gros on produit avec les centrales les moins chers d'abord. En utilisant cette méthode l'ordre d'appel
 des centrales est : G1 (25€/MWh) --> G3 ( 50 €/MWh) --> G2 (75€/MWh). Cela permet d'avoir un cout totale de production de l'ordre 16800 €
 
 - <img width="526" height="246" alt="image" src="https://github.com/user-attachments/assets/63991e83-8a31-4c80-bce6-3377df4c917d" />
 
-  ### PART II — minimisation des pertes (tâtonnement, gradient).
+** D'autres cas de scénarios avec des congestions sont présentés en details dans le rapport pdf **
+
+  ### PART II — minimisation des pertes (tâtonnement, méthode des gradients).
+Pour cette partie on a supposé que chaque centrale produsait au meme prix :
+  - **G1 (bus 1)** : prix marginal 50 €/MWh — Production max **300 MVA**.  
+  - **G2 (bus 2)** : prix 50 €/MWh — Production max **300 MVA**.  
+  - **G3 (bus 3)** : prix 50 €/MWh — Production max **200 MVA**. 
+
+L’objectif est de **minimiser les pertes actives ($\sum_{l} R_{l} I_{l}^{2}$)** du réseau en ajustant simultanément les tensions et le dispatch des unités (puissances actives/réactives).  
+Les méthodes testées incluent un **tâtonnement / balayage paramétrique** et une approche **par gradient** (optimisation locale). En combinant réglage de tensions et redistribution de la production, on obtient une réduction notable des pertes par rapport à la stratégie purement économique.
+
+**Résultat représentatif :** la meilleure solution trouvée donne des pertes ≈ **0.0891 pu** (plan exemple : PG1 ≈ 2.55 pu, PG3 ≈ 1.30 pu).  Ce qui équivaut à 8 MW de pertes pour 475MW de charges.
+Ceci représente une amélioration d’environ **12.8%** par rapport au cas de référence (ex. `P_losses = 0.1020 pu` obtenu sans optimisation des tensions).
+
+<img width="526" height="246" alt="Comparaison pertes" src="sandbox:/mnt/data/results_comparison.png" />
+
+**Remarque :** d'autres  résultats détaillés par scénario (congestion, contraintes Sn des lignes) sont fournis dans le rapport PDF.
+
+
 
   ###  PART III —maximisation du coefficient de lestage (gestion du délestage, étude de contingence). 
 # **Bureau d’Études 2 (Lab 3)**:   
@@ -59,11 +77,7 @@ Ces parties sont reprises dans le dossier `results/` avec un résumé des princi
 
 ## Résultats clés — résumé par partie (extraits & figures)
 
-### Lab n°2 — PART I : Minimisation des coûts
-- Méthode : ordre de mérite pour l'appel des unités et simulations de load flow.  
-- Résultat représentatif : en scénario sans congestion on obtient un dispatch économiquement efficace (coût dans l'ordre de **~16 k€** selon les scénarios étudiés).   
-- Figure associée : voir `results/cost_dispatch_example.png` (si fournie).  
-- Remarque : la congestion (réduction de Sn_max sur certaines lignes) augmente le coût — ex. coûts plus élevés avec Sn_max réduits sur L4/L5/L7. :contentReference[oaicite:14]{index=14}
+
 
 ---
 
