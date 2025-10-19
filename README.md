@@ -133,3 +133,8 @@ Après simulation on a obtenu sans contrainte un cout minimal de 16740 euros:
 
 
 **Remarque**: plus de détails sur la méthode et aussi la simulation d'autres scénarios (avec des contraintes en tension et en puissances) sont présentés dans le rapport pdf.  
+
+
+# Autres membres du projets
+1. Anthony PEUJIO
+2. Mireille NGUEPTCHOUANG
