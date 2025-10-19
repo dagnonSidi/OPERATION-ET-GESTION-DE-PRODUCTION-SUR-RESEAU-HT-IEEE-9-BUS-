@@ -80,26 +80,28 @@ L'objectif dans ce contexte est maintenir le plus possible de client (lestage) s
 
 
   
-# **Bureau d’Études 2 (Lab 3)**:   
-- **Lab n°3** — comparaison des méthodes d'optimisation : recherche exhaustive vs `fmincon` (optimisation automatique). :contentReference[oaicite:12]{index=12}
+# **Bureau d’Études 2 (Lab 3)**:   — comparaison des méthodes d'optimisation : recherche exhaustive vs `fmincon` (optimisation automatique). 
 
-Ces parties sont reprises dans le dossier `results/` avec un résumé des principaux résultats et les figures correspondantes.
+Dans cette partie l’objectif est  de comparer deux méthodes d'optimisation afin de minimiser soit le **coût total de production** ou soit **la perte** et ainsi d’évaluer l’efficacité de différentes méthodes d’optimisation appliquées au réseau.
+Les deux méthodes étudiées sont : recherche exhaustive / balayage paramétrique,ou optimiseur `fmincon` de Matlab
+Pour cela ce BE 2 (lab3) est divisé en 2 parties:
+
+  - PART I  — **Recherche exhaustive**
+  - PART II — **`fmincon`**  de Matlab
+
+###   - PART I  — **Recherche exhaustive pour minimiser les pertes**
+Pour cette partie, on a mis les générateurs G2 er G3 comme des types de noeuds PV et le générateur G1 comme noeud Slack.
+Ainsi, la methode exhausitive consistera à trouver les bonnes valeurs de P2 et P3 pour lesquelles on a le minimum de pertes. Pour cela on a stocké toutes les combinaisons possibles de P2 et P3 dans une matrice de pertes ( le pas de variation est de 0.1).
+Une fois cette matrice de pertes obtenu, on utilise la fonction Surf de Matlab pour visualiser les zonnes de perte. On obtient alors la courbe 3D ci-dessous:
+
+<img width="1073" height="529" alt="image" src="https://github.com/user-attachments/assets/cde0934c-7a43-4e2b-8243-df11b7a138d2" />
+
+La perte de puissante active étant une fonction convexe, les minimums de pertes se trouvent dans le creux de la fonction.    
 
 
+Sans contrainte de tension ou de puissance on eu la valeur minimale de **p_losses=0.0888 pu** correspondant à **P2=0.9pu** ,**P3=1.30pu**
 
----
-
-### Lab n°3 — Optimisation automatique vs recherche exhaustive
-- Méthodes : recherche exhaustive (balayage), `fmincon` (optimiseur Matlab).  
-- Résultats clés : `fmincon` trouve des solutions plus rapidement et avec des pertes plus faibles que la recherche exhaustive (exemples chiffrés ci-dessous). 
-
-#### Comparaison (extrait)
-![Comparaison pertes — méthodes](sandbox:/mnt/data/results_comparison.png)
-
-- Valeurs représentatives (extrait du rapport) :
-  - **Exhaustive (avec contraintes)** : `P_losses = 0.1020 pu` (temps de calcul plus long). :contentReference[oaicite:18]{index=18}  
-  - **Fmincon (avec contraintes)** : `P_losses ≈ 0.08895 pu` (plus rapide et meilleur résultat). :contentReference[oaicite:19]{index=19}  
-  - **Gradient / solution manuelle** : `P_losses ≈ 0.0891 pu`. :contentReference[oaicite:20]{index=20}
+  }
 
 ---
 
