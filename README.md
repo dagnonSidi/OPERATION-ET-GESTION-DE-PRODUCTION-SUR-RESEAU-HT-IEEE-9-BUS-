@@ -59,11 +59,9 @@ L’objectif est de **minimiser les pertes actives ($\sum_{l} R_{l} I_{l}^{2}$)*
 Les méthodes testées incluent un **tâtonnement / balayage paramétrique** et une approche **par gradient** (optimisation locale). En combinant réglage de tensions et redistribution de la production, on obtient une réduction notable des pertes par rapport à la stratégie purement économique.
 
 **Résultat représentatif :** la meilleure solution trouvée donne des pertes ≈ **0.0891 pu** (plan exemple : PG1 ≈ 2.55 pu, PG3 ≈ 1.30 pu).  Ce qui équivaut à 8 MW de pertes pour 475MW de charges.
-Ceci représente une amélioration d’environ **12.8%** par rapport au cas de référence (ex. `P_losses = 0.1020 pu` obtenu sans optimisation des tensions).
+On a fait plusieurs paramétrage, et les pertes correspondant à chacun est dans le tableau suivant:
 
-<img width="526" height="246" alt="Comparaison pertes" src="sandbox:/mnt/data/results_comparison.png" />
-
-**Remarque :** d'autres  résultats détaillés par scénario (congestion, contraintes Sn des lignes) sont fournis dans le rapport PDF.
+- <img width="256" height="332" alt="image" src="https://github.com/user-attachments/assets/0ad42e73-0506-49e1-addc-14b5351fe25f" />
 
 
 
