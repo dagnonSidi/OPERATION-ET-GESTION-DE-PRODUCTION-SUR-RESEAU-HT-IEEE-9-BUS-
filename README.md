@@ -128,6 +128,6 @@ Après simulation, on a obtenu sans contrainte un coût minimal de **16 740 €*
 
 ---
 
-# Membres du projet
+# Autres Membres du projet
 1. Anthony PEUJIO  
 2. Mireille NGUEPTCHOUANG
